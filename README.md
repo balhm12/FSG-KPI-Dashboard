@@ -47,3 +47,7 @@ GitHub Pages(비밀번호 잠금)로 배포합니다.
 - 2026-10-06: PM 가중치 0.4 → 0.2, 온라인 정기점검 0.2 → 0(KPI 점수 제외),
   인원 FSG 로스터 44명 기준(백원욱·심구 FS WEST 추가), 빌드 로그의 비밀번호 출력 제거,
   README의 평문 비밀번호 삭제. 원작자: 김성민(ksm1339/FSG-KPI-Dashboard)
+- 2026-10-07: 데이터·기준표를 새 비밀번호로 다시 암호화. `master.xlsx`를 자체 작성본으로 교체
+  (Members = FSR 담당기관 관리표 담당자 명단 44명, ITEM Group = CRM 모델 79종 규칙 분류,
+  거래처 List = 관리표 담당기관 910곳). 원본 데이터: CRM 「2. 모든 약속_활동」 2026-09-30 추출.
+  기준표 재작성: `python tools/make_master.py <CRM.xlsx> <FSR 담당기관 관리표.xlsx> reference/master.xlsx`
